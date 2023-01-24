@@ -1,0 +1,29 @@
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg">
+
+  <div id="dropDown">
+    <mat-form-field appearance="fill">
+      <mat-label>Select </mat-label>
+      <mat-select>
+        <mat-option value="one" routerLink="/home/user-requests">Requests</mat-option>
+        <mat-option value="two">Assets</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <div id="userPicture">
+    <img [src]="image" alt="">
+  </div>
+  <div id="userDetails">
+    <div id="z1">
+      <h5 style="color:red"><strong>{{message}}</strong></h5>
+    </div>
+    <div id="z2">
+      <h5 style="color:blue"> {{currentUserSalutation}} <strong>{{currentUserName}}</strong></h5>
+    </div>
+    <div id="z3">
+      <h6 style="color:blue;"><strong>{{date|date:'short'}}</strong></h6>
+
+    </div>
+
+  </div>
+</nav>

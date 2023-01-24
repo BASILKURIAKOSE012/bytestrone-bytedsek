@@ -1,0 +1,34 @@
+<div class="container" id="requestForm">
+    <div class="row">
+        <div class="col-9">
+            <label style="color: blue;" for="">Request ID</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.requestId" class="form-control"
+                [readOnly]="true">
+            <label style="color: blue;" for="">Employee Name</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.employeeName" class="form-control"
+                [readOnly]="true">
+            <label style="color: blue;" for="">Employee ID</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.employeeId" class="form-control"
+                [readOnly]="true">
+            <div *ngFor="let item of recievedReassignedData">
+                <label for="" style="color: red;">User info</label>
+                <textarea style="height: 10vh; color:red;" type="text" [value]="item.userInfo" class="form-control"
+                    [readOnly]="true"> </textarea>
+                <label for="" style="color: green;">Admin info</label>
+                <textarea type="text" style="color:green" class="form-control" [value]="item.adminInfo"
+                    [readOnly]="true" name="" id=""></textarea>
+            </div>
+            <label for="" style="color:red">User Info</label>
+            <textarea style="color: red;" type="text" [value]="requestedIdData.ticketDescription" class="form-control"
+                [readOnly]="true" size="50"></textarea>
+            <label for="" style="color:green">Admin info</label>
+            <textarea style="height: 10vh;color:green" type="text" [value]="requestedIdData.info" class="form-control"
+                [readOnly]="true"> </textarea>
+
+            <br>
+
+            &nbsp; <button class="btn btn-danger" routerLink="/home/user-requests"> back</button>
+
+        </div>
+    </div>
+</div>

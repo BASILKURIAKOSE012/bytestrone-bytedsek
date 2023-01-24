@@ -1,0 +1,36 @@
+<div class="container" id="requestForm">
+    <div class="row">
+        <div class="col-9">
+            <label style="color: blue;" for="">Request ID</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.requestId" class="form-control"
+                [readOnly]="true">
+            <label style="color: blue;" for="">Employee Name</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.employeeName" class="form-control"
+                [readOnly]="true">
+            <label style="color: blue;" for="">Employee ID</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.employeeId" class="form-control"
+                [readOnly]="true">
+            <label style="color: blue;" for="">Ticket Summary</label>
+            <input style="color: blue;" type="text" [value]="requestedIdData.ticketSummary" class="form-control"
+                [readOnly]="true" size="50">
+            <div *ngFor="let item of recievedReassignedData">
+                <label for="" style="color: red;">User info</label>
+                <textarea style="height: 10vh; color:red;" type="text" [value]="item.userInfo" class="form-control"
+                    [readOnly]="true"> </textarea>
+                <label for="" style="color: green;">Admin info</label>
+                <textarea type="text" style="color:green" class="form-control" [value]="item.adminInfo"
+                    [readOnly]="true" name="" id=""></textarea>
+            </div>
+            <label style="color: blue;" for="">New User Info</label>
+            <textarea style="height: 10vh; color: blue;" type="text" [value]="requestedIdData.ticketDescription"
+                class="form-control" [readOnly]="true"> </textarea>
+            <label style="color: blue;" for="">Solution</label>
+            <textarea style="color: blue;" type="text" class="form-control" [(ngModel)]="info" name="" id=""></textarea>
+            <br>
+            <button class="btn btn-success" (click)="resolveRequest()"> Resolve</button>
+            &nbsp; <button class="btn btn-primary" (click)="reassignRequest();reassign()"> Reassign</button>
+            &nbsp; <button class="btn btn-danger" routerLink="/home/user-requests"> Cancel</button>
+
+        </div>
+    </div>
+</div>

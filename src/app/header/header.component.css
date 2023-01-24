@@ -1,0 +1,65 @@
+#f1 {
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+#navbar {
+  margin-top: -2vh;
+  height: 13vh;
+  width: 80vw;
+
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#dropDown {
+
+  margin-left: 10vw;
+  margin-top: 3vh;
+}
+
+#userDetails {
+
+  height: 8vh;
+  width: 15vw;
+
+  font-size: 1vh;
+  margin-left: 27vw;
+
+  border-radius: 2vh;
+
+}
+
+#z2 {
+  margin-top: -2vh;
+  margin-left: 1vw;
+}
+
+#z1 {
+  margin-left: 1vw;
+}
+
+#z3 {
+  margin-top: -2vh;
+  margin-left: 1vw;
+}
+
+#userPicture {
+  height: 8vh;
+  width: 8vw;
+
+  border-radius: 8vw;
+
+}
+
+img {
+  height: 8vh;
+  width: 8vw;
+  border-radius: 8vw;
+  margin-left: 45vw;
+
+}

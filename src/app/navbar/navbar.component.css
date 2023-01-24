@@ -1,0 +1,32 @@
+#image{
+    margin-top: 5vh;
+    width: 15vw;
+}
+#home{
+    margin-top: 50px;
+    color: white;
+    margin-left: 1vw;
+}
+#bytedesk{
+    color: white;
+    margin-left: 1vw;
+}
+#settings{
+    margin-top: 40vh;
+    color: white;
+    margin-left: 1vw;
+}
+#logout{
+    color: white;
+    margin-left: 1vw;
+  
+}
+#copyRight{
+    margin-top: 10vh;
+    font-size:x-small;
+    color: white;
+    margin-left: 5vw ;
+}
+#rights{
+    margin-left: 25px;
+}
